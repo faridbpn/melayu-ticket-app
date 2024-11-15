@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:train_ticket_buying_app/module/flight_schedule/flight_schedule.dart';
+import 'package:train_ticket_buying_app/module/promotion_page/promotion_page.dart';
+import 'package:train_ticket_buying_app/module/settings_page/settings_page.dart';
 import '../../dashboard/view/dashboard_view.dart';
 import '../controller/main_navigation_controller.dart';
 
@@ -16,9 +19,9 @@ class MainNavigationView extends StatefulWidget {
           index: controller.selectedIndex,
           children: [
             const DashboardView(),
-            Container(),
-            Container(),
-            Container(),
+            PromotionPage(),
+            FlightSchedule(),
+            SettingsPage(),
           ],
         ),
         bottomNavigationBar: Padding(
